@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width" />
+     <title>Encriptador de texto</title>
+     <link rel="icon" href="logo.png" type="image/x-icon" />
+     <meta name="author" content="Doyel Saulino Ochoa">
+     <script src="script.js" defer></script>
+
+</head>
+
+<body>
+     <textarea oninput="textChanged()" onchange="textChanged()" name="code" id="text" cols="30" rows="10"></textarea>
+     <button id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
+     <button id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
+     <button onclick="copy()">Copy</button>
+</body>
+
+</html>
