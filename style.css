@@ -1,19 +1,50 @@
 html {
-    background-color: green;
-    font-size: 20px;
-  }
-  
-  ul {
-    background: red;
-    padding: 10px;
-    border: 1px solid black;
-  }
-  
-  li {
-    margin-left: 20px;
-  }
-  
-#encryptdecrypttext{
-  
+  background: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.inputArea {
+  display: flex;
+  flex-flow: column;
+  flex: 3;
+}
+
+.outputArea {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 400px;
+  flex: 1;
+}
+
+.buttonRow { 
+  flex-flow: row;
+  justify-content: center;
+}
+
+textarea {
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  color: #ffffff;
+  font-size: 14pt;
+  background: #2FB1FB;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1px 10px;
+  border-style: hidden;
+}
+
+button:active {
+  background-color: #00bfff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

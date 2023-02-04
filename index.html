@@ -4,7 +4,8 @@
 <head>
 
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
      <title>Encriptador de texto</title>
      <link rel="icon" href="logo.png" type="image/x-icon" />
      <meta name="author" content="Doyel Saulino Ochoa">
@@ -13,10 +14,31 @@
 </head>
 
 <body>
-     <textarea oninput="textChanged()" onchange="textChanged()" name="code" id="text" cols="30" rows="10"></textarea>
-     <button id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
-     <button id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
-     <button onclick="copy()">Copy</button>
+     <header>
+          <h1 id="title">Encriptador de texto</h1>
+     </header>
+     <div class="container">
+          <div class="inputArea">
+
+               <textarea class="" oninput="textChanged()" onchange="textChanged()" name="code" id="text" cols="30"
+                    rows="10"></textarea>
+               <div class="buttonRow">
+                    <button id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
+                    <button id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
+               </div>
+          </div>
+          <div class="outputArea">
+               <textarea readonly name="showText" id="textResult" cols="30" rows="10"></textarea>
+               <div class="buttonRow">
+                    <button onclick="copy()">Copy</button>
+               </div>
+          </div>
+     </div>
+
 </body>
+
+<footer>
+     <p>Doyel, Saulino <a href="https://instagram.com/doyito">Instagram</a></p>
+</footer>
 
 </html>

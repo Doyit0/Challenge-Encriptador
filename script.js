@@ -17,21 +17,26 @@ function decrypt(input) {
 
 function encryptButtonClicked() {
     const unencrypted = document.getElementById("text").value;
-    document.getElementById("text").value = encrypt(unencrypted);
+    document.getElementById("textResult").value = encrypt(unencrypted);
+    document.getElementById("text").value = null;
 }
+    
 
 function decryptButtonClicked() {
     const encrypted = document.getElementById("text").value;
-    document.getElementById("text").value = decrypt(encrypted);
+    document.getElementById("textResult").value = decrypt(encrypted);
+    document.getElementById("text").value = null;
 }
 
 function copy() {
-    const text = document.getElementById("text").value;
+    const text = document.getElementById("textResult").value;
     navigator.clipboard.writeText(text);
+    
 }
 
 function textChanged(){
-    const regex = /^[a-z,\s]*$/gm;
+    //regex una constante con expresion regular que evalua que toda una string sea con minusculas
+    const regex = /^[a-z,\s]*$/gm; 
     const text = document.getElementById("text").value;
     const disabled = regex.exec(text) == null;
     document.getElementById("encryptButton").disabled=disabled;
