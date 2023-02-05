@@ -4,26 +4,33 @@ html {
   margin: 10px;
 }
 
+
 .container {
   display: flex;
   flex-flow: row wrap;
+  gap: 20px;
 }
 
 .inputArea {
+  gap: inherit;
   display: flex;
-  flex-flow: column;
   flex: 3;
+  flex-flow: column;
 }
 
 .outputArea {
+  gap: inherit;
   display: flex;
+  flex: 1;
   flex-flow: column;
   flex-basis: 400px;
-  flex: 1;
 }
 
-.buttonRow { 
-  flex-flow: row;
+.buttonRow {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  align-items: center;
   justify-content: center;
 }
 
@@ -31,6 +38,8 @@ textarea {
   background: rgba(255, 255, 255, 0.58);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  flex: 1;
+  resize: none;
 }
 
 button {
