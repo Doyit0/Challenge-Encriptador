@@ -107,3 +107,8 @@ textarea {
   transform: translateY(-4em) scale(1.5);
   transition: 250ms;
 }
+
+.instaIcon{
+  height: 25px;
+  
+}
