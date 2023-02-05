@@ -23,14 +23,15 @@
                <textarea class="" oninput="textChanged()" onchange="textChanged()" name="code" id="text" cols="30"
                     rows="10"></textarea>
                <div class="buttonRow">
-                    <button id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
-                    <button id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
+                    <button disabled class="button" id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
+                    <button disabled class="button" id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
                </div>
           </div>
           <div class="outputArea">
                <textarea readonly name="showText" id="textResult" cols="30" rows="10"></textarea>
                <div class="buttonRow">
-                    <button onclick="copy()">Copy</button>
+                    <button id="copyButton" class="copyButton" onclick="copy()"><img class="copyImage"
+                              src="images/copy-icon.svg" alt="Copy text button"></button>
                </div>
           </div>
      </div>

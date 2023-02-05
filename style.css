@@ -1,14 +1,30 @@
 html {
-  background: #ffffff;
+  height: 95%;
+  background: #1E1E1E;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px;
 }
 
+h1 {
+  color: #39b6ff;
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.589);
+  border-bottom: solid #b7b7b74e;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .container {
   display: flex;
+  flex: 1 1 auto;
+  height: 100%;
   flex-flow: row wrap;
-  gap: 20px;
+  row-gap: 10px;
+  column-gap: 0;
 }
 
 .inputArea {
@@ -35,14 +51,16 @@ html {
 }
 
 textarea {
-  background: rgba(255, 255, 255, 0.58);
+  padding: 10px;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   flex: 1;
   resize: none;
+  margin: 0% 12% 0% 12%;
 }
 
-button {
+.button {
   padding: 15px 30px;
   color: #ffffff;
   font-size: 14pt;
@@ -50,10 +68,42 @@ button {
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.5);
   border-radius: 1px 10px;
   border-style: hidden;
+  transition: 250ms;
 }
 
-button:active {
+.button:hover:enabled {
+  transform: scale(1.1);
+  transition: 250ms;
+}
+
+.button:active:enabled {
   background-color: #00bfff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.button:disabled {
+  background-color: grey;
+}
+
+.copyButton {
+  transform: translateY(-4em);
+  transition: 250ms;
+  background: none;
+  border: none;
+  visibility: hidden;
+}
+
+.copyButton:active:enabled {
+  transform: translateY(-4em) scale(0.8);
+  transition: 100ms;
+}
+
+.copyImage {
+  width: 1em;
+}
+
+.copyButton:hover {
+  transform: translateY(-4em) scale(1.5);
+  transition: 250ms;
 }
