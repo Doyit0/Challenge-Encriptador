@@ -1,15 +1,14 @@
 html {
   height: 95%;
-  background: #1E1E1E;
+  background: #000000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px;
 }
 
 h1 {
-  color: #39b6ff;
+  color: #ffffff;
   text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.589);
   border-bottom: solid #b7b7b74e;
-
 }
 
 body {
@@ -39,13 +38,13 @@ body {
   display: flex;
   flex: 1;
   flex-flow: column;
-  flex-basis: 400px;
+  flex-basis: 30%;
 }
 
 .buttonRow {
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
+  gap: 15%;
   align-items: center;
   justify-content: center;
 }
@@ -57,7 +56,7 @@ textarea {
   border-radius: 20px;
   flex: 1;
   resize: none;
-  margin: 0% 12% 0% 12%;
+  margin: 0% 12%;
 }
 
 .button {
@@ -108,7 +107,19 @@ textarea {
   transition: 250ms;
 }
 
-.instaIcon{
-  height: 25px;
+footer{
+  display: flex;
+  color: #ffffff;
+  background: #000000;
+  margin: 2%;
   
+}
+
+li{
+  list-style-type: none;
+}
+.instaIcon, .gitHubIcon{
+  height: 20px;
+  width: 20px;
+  background-color: #666666;
 }
