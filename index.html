@@ -20,14 +20,14 @@
      <div class="container">
           <div class="inputArea">
 
-               <textarea class="" oninput="textChanged()" onchange="textChanged()" name="code" id="text"></textarea>
+               <textarea placeholder= "Ingrese aquí el texto a codificar." class="" oninput="textChanged()" onchange="textChanged()" name="code" id="text"></textarea>
                <div class="buttonRow">
                     <button disabled class="button" id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
                     <button disabled class="button" id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
                </div>
           </div>
           <div class="outputArea">
-               <textarea readonly name="showText" id="textResult"></textarea>
+               <textarea placeholder= "No se ha encontrado mensaje. Ingrese el mensaje que desea encriptar o desencriptar." readonly name="showText" id="textResult"></textarea>
                <div class="buttonRow">
                     <button id="copyButton" class="copyButton" onclick="copy()"><img class="copyImage"
                               src="images/copy-icon.svg" alt="Copy text button"></button>
@@ -37,9 +37,12 @@
 </body>
 
 <footer>
-          <li>Doyel, Saulino</li>
-          <li><a href="https://instagram.com/doyito"><img class="instaIcon" src="images/instagram-icon.svg" alt="Instagram Icon" ></a></li>
-          <li><a href="https://github.com/Doyit0"><img class="gitHubIcon" src="images/github-icon.svg" alt="GitbHub Icon" ></a></li>
+     <p>Doyel, Saulino <br>
+          <a href="https://instagram.com/doyito"><img class="instaIcon" src="images/Instagram_Glyph_White.svg"
+                    alt="Instagram Icon"></a>
+          <a href="https://github.com/Doyit0"><img class="gitHubIcon" src="images/github-mark-white.svg"
+                    alt="GitbHub Icon"></a>
+      </p>
 </footer>
 
 </html>

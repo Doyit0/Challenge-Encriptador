@@ -12,14 +12,16 @@ function decrypt(input) {
         .replaceAll("ai", "a")
         .replaceAll("imes", "i")
         .replaceAll("enter", "e");
-
 }
 
 function encryptButtonClicked() {
     const unencrypted = document.getElementById("text").value;
-    document.getElementById("textResult").value = encrypt(unencrypted);
+    let result = document.getElementById("textResult")
+    result.value = encrypt(unencrypted);
     document.getElementById("text").value = null;
     document.getElementById("copyButton").style.visibility = "visible";
+    textChanged();
+    result.style.backgroundImage  = "none";
 }
     
 
@@ -28,6 +30,7 @@ function decryptButtonClicked() {
     document.getElementById("textResult").value = decrypt(encrypted);
     document.getElementById("text").value = null;
     document.getElementById("copyButton").style.visibility = "visible";
+    textChanged();
 }
 
 function copy() {
@@ -43,5 +46,4 @@ function textChanged(){
     const disabled = regex.exec(text) == null;
     document.getElementById("encryptButton").disabled=disabled;
     document.getElementById("decryptButton").disabled=disabled;
-
 }
