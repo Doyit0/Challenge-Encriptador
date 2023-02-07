@@ -67,7 +67,7 @@ textarea::placeholder{
 }
 
 #textResult{
-  background-image: url(images/searching.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.9)), url("images/searching.png");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
