@@ -85,9 +85,7 @@ textarea::placeholder {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
-
 
 .button {
   padding: 15px 30px;
@@ -145,7 +143,6 @@ footer {
   margin: 1%;
   line-height: 2em;
   border-top: solid #b7b7b74e;
-  padding-top: ;
 }
 
 footer a {
