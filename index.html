@@ -19,15 +19,18 @@
      </header>
      <div class="container">
           <div class="inputArea">
-
-               <textarea placeholder= "Ingrese aquí el texto a codificar." class="" oninput="textChanged()" onchange="textChanged()" name="code" id="text"></textarea>
+               <p id="warning">Solo en minúsculas y sin caracteres especiales.</p>
+               <textarea placeholder="Ingrese aquí el texto a codificar." class="" oninput="textChanged()"
+                    onchange="textChanged()" name="code" id="text"></textarea>
                <div class="buttonRow">
                     <button disabled class="button" id="encryptButton" onclick="encryptButtonClicked()">Encrypt</button>
                     <button disabled class="button" id="decryptButton" onclick="decryptButtonClicked()">Decrypt</button>
                </div>
           </div>
           <div class="outputArea">
-               <textarea placeholder= "No se ha encontrado mensaje. Ingrese el mensaje que desea encriptar o desencriptar." readonly name="showText" id="textResult"></textarea>
+               <textarea
+                    placeholder="No se ha encontrado mensaje.&#10;Ingrese el mensaje que desea encriptar o desencriptar."
+                    readonly name="showText" id="textResult"></textarea>
                <div class="buttonRow">
                     <button id="copyButton" class="copyButton" onclick="copy()"><img class="copyImage"
                               src="images/copy-icon.svg" alt="Copy text button"></button>
@@ -42,7 +45,7 @@
                     alt="Instagram Icon"></a>
           <a href="https://github.com/Doyit0"><img class="gitHubIcon" src="images/github-mark-white.svg"
                     alt="GitbHub Icon"></a>
-      </p>
+     </p>
 </footer>
 
 </html>
