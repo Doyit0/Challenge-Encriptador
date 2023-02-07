@@ -46,5 +46,5 @@ function textChanged() {
     const disabled = regex.exec(text) == null;
     document.getElementById("encryptButton").disabled = disabled;
     document.getElementById("decryptButton").disabled = disabled;
-    document.getElementById("warning").style.visibility = disabled ? "visible" : "hidden";
+    document.getElementById("warning").style.visibility = disabled && text.length != 0 ? "visible" : "hidden";
 }
